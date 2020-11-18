@@ -74,11 +74,19 @@ public class Olay {
         return olayTipi;
     }
 
-    public double süre() {
+    public int süre() {
         return süre;
     }
+    
+    public void süreyiAzalt(int süre) {
+        this.süre-=süre;
+    }
+    
+    public Kamyon kamyon() {
+        return kamyon;
+    }
 
-    public double olayıGerçekleştir(double zaman) {
-        return zaman + this.süre;
+    public double olayıGerçekleştir() {
+        return this.süre;
     }
 }
